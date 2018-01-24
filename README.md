@@ -101,6 +101,26 @@ mkdir data
 * Pytorch 0.2.0
 * CUDA 8.0 or higher
 
+```
+wget -q -O - https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh |sh
+source ~/.bashrc
+conda create -n frcnn python=2
+source activate frcnn
+```
+#### For Cuda 9.0 (Check http://pytorch.org/ for more informations)
+```
+conda install pytorch torchvision cuda90 -c pytorch
+pip install easydict
+pip install scipy
+pip install matplotlib
+pip install opencv-python
+pip install pyyaml
+```
+or
+```
+pip install -r requirements.txt
+```
+
 ### Data Preparation
 
 * **PASCAL_VOC 07+12**: Please follow the instructions in [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn#beyond-the-demo-installation-for-training-and-testing-models) to prepare VOC datasets. Actually, you can refer to any others. After downloading the data, creat softlinks in the folder data/.
