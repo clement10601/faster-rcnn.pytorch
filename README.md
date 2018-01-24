@@ -157,10 +157,21 @@ As pointed out by [ruotianluo/pytorch-faster-rcnn](https://github.com/ruotianluo
   
 More details about setting the architecture can be found [here](https://developer.nvidia.com/cuda-gpus) or [here](http://arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/)
 
-Compile the cuda dependencies using following simple commands:
+#### Compile the cuda dependencies using following simple commands:
 
+Edit make.sh to fit your sys env.
 ```
 cd lib
+vim make.sh
+```
+Customize both CPATH & CUDA_PATH in make.sh:
+```
+## make.sh
+CPATH=/opt/cuda/include  # Line: 3
+CUDA_PATH=/opt/cuda/     # Line: 4
+```
+Run build: 
+```
 sh make.sh
 ```
 
