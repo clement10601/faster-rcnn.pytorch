@@ -118,7 +118,7 @@ pip install pyyaml
 ```
 or
 ```
-pip install -r requirements.txt
+pip install -r requirements-py2.txt
 ```
 
 ### Data Preparation
