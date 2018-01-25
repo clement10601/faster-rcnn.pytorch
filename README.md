@@ -174,6 +174,10 @@ Run build:
 ```
 sh make.sh
 ```
+or
+```
+CPATH=/opt/cuda/include ./make.sh
+```
 
 It will compile all the modules you need, including NMS, ROI_Pooing, ROI_Align and ROI_Crop. The default version is compiled with Python 2.7, please compile by yourself if you are using a different python version.
 
